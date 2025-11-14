@@ -1,0 +1,48 @@
+/* Bright, energetic styles for the portfolio site */
+:root{
+  --bg: #f8fafc;       /* very light background */
+  --card: #ffffff;     /* white cards */
+  --accent: #ff7a59;   /* warm orange accent */
+  --accent-2: #06b6d4; /* teal secondary accent */
+  --muted: #6b7280;    /* muted gray */
+  --text: #0b1220;     /* dark text */
+}
+
+*{box-sizing:border-box}
+body{margin:0;font-family:Segoe UI, Roboto, Arial, sans-serif;background:var(--bg);color:var(--text);-webkit-font-smoothing:antialiased}
+.container{max-width:980px;margin:0 auto;padding:28px}
+
+/* bright header */
+.site-header{background:linear-gradient(90deg,#fff7f2, #fef3ef);border-bottom:1px solid rgba(11,18,32,0.04)}
+.site-header .container{display:flex;align-items:center;justify-content:space-between}
+.logo{margin:0;font-size:20px;color:var(--text);font-weight:600}
+.main-nav a{color:var(--muted);text-decoration:none;margin-left:16px;padding:10px 6px;border-radius:6px}
+.main-nav a.active, .main-nav a:hover{color:var(--accent);background:rgba(255,122,89,0.06)}
+
+.hero{padding:64px 28px;text-align:center}
+.hero h2{font-size:36px;margin:0 0 12px;color:var(--text)}
+.hero p{color:var(--muted);max-width:720px;margin:0 auto}
+.actions{margin-top:18px}
+.btn{display:inline-block;padding:10px 18px;border-radius:8px;background:var(--accent);color:white;text-decoration:none;margin-right:8px}
+.btn.outline{background:transparent;border:1px solid rgba(11,18,32,0.06);color:var(--text)}
+
+.highlight{background:#fff;box-shadow:0 2px 8px rgba(11,18,32,0.04);margin-top:20px;padding:18px;border-radius:8px;color:var(--text)}
+
+.skill-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.skill-list article{background:var(--card);padding:16px;border-radius:8px;border:1px solid rgba(11,18,32,0.03)}
+.skill-list h4{margin:0 0 8px;color:var(--accent-2)}
+
+.site-footer{padding:18px 0;color:var(--muted);border-top:1px solid rgba(11,18,32,0.03);text-align:center;background:transparent}
+
+@media (max-width:600px){
+  .site-header .container{flex-direction:column;align-items:flex-start}
+  .main-nav{margin-top:8px}
+  .container{padding:16px}
+}
+
+/* Contact form styles */
+.contact-form{max-width:640px;background:var(--card);padding:18px;border-radius:8px;border:1px solid rgba(11,18,32,0.04)}
+.contact-form label{display:block;margin-top:12px;color:var(--muted)}
+.contact-form input,.contact-form textarea{width:100%;padding:10px;border-radius:6px;border:1px solid rgba(11,18,32,0.08);background:transparent;color:var(--text);margin-top:6px}
+.contact-form button{margin-top:12px}
+.muted{color:var(--muted);font-size:0.95rem}
