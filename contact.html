@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact - Colin Simpson</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">Colin Simpson</h1>
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="skills.html" class="nav-link">My Skills</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Contact Me</h2>
+
+    <p>If you'd like to get in touch, send an email to <a href="mailto:colinnsimpsonn@gmail.com">colinnsimpsonn@gmail.com</a> or use the quick form below to open an email draft in your mail app.</p>
+
+    <form id="contact-form" class="contact-form">
+      <label for="name">Your name</label>
+      <input id="name" name="name" type="text" placeholder="Your name" />
+
+      <label for="email">Your email</label>
+      <input id="email" name="email" type="email" placeholder="you@example.com" />
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="6" placeholder="Hi Colin — I want to..."></textarea>
+
+      <button class="btn" type="submit">Send (opens mail client)</button>
+    </form>
+
+    <p class="muted">Note: This form opens your mail client (mailto) to send messages. If you want an on-site contact form, I can wire it to a service (Formspree, Netlify Forms) or a backend.</p>
+
+    <p><a class="btn" href="index.html">Back to Home</a></p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+  <p>© 2025 Colin Simpson · <a href="http://www.youtube.com/@NishForChief" target="_blank">YouTube (Nish)</a> · <a href="#" id="github-link">GitHub</a></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
